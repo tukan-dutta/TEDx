@@ -5,8 +5,9 @@ html{
 body{
 	background-image: url(headImge.jpg);
 	margin: 0;
-	background-size: cover;
+	background-size: 100%;
 	padding: 0;
+	background-repeat: no-repeat;
 }
 @font-face{
 	font-family: 'century';
@@ -26,8 +27,9 @@ body{
 }
 
 @keyframes main{
-	from{transform: translate(-50%,-50%) scale(0.5);top: 70%;}
-	to{transform: translate(-50%,-50%) scale(0.08);top: 27%;left: 39.5%;}
+	0%{transform: translate(-50%,-50%) scale(0.5);top: 70%;}
+	50%{transform: translate(-50%,-50%) scale(0.08);top: 28.3%;left: 39.4%;}
+	100%{transform: translate(-50%,-50%) scale(0.08);top: 28.3%;left: 39.4%;opacity: 0;}
 
 }
 
@@ -1292,6 +1294,7 @@ hr {
   display: inline-block;
   box-shadow: 5px 10px 8px #888888;
   border:1px solid black;
+  transition: all ease 1s;
 }
 
 .row1{
@@ -1363,6 +1366,12 @@ input[type=submit]:hover {
 
 	background-size: cover;
 	align-self: center;
+	transition: all ease 1s;
+}
+
+.dot:hover{
+   transform: scale(1.2,1.2);
+
 }
 
 .santy{
