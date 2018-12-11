@@ -334,8 +334,8 @@ z-index: -10;
  	}
 
  	#para #ted{
-	top: 9%;
-	left: 51%;
+	top: 8vh;
+	left: 51vw;
 	transform: translateX(-50%);
 	font-size: 1em;
 	font-family: century;
