@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-x : hidden;">
 <head>
 	<title>TEDX NIT Silchar</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="home.css">
-	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="typed.min.js"></script>
+    <script src="rellax.js"></script>
+
+
 </head>
 <body>
+
+    
+
+
+
 	<div id="main">
 		<div id="div1"></div>
 		<div id="div2"></div>
@@ -20,12 +32,15 @@
 		<div id="div7"></div>
 	</div>
 
+
 	<img src="logo.png" id="logo">
 	<div id="logoside"></div>
 	<div id="logoside1"></div>
 	<div id="logoside2"></div>
 	<div id="logoside3"></div>
 	<div id="logoside4"></div>
+
+    <div class='topheader'>
 	<p id="para">
 		<span id="ted"><b>TED</b></span>
 		<span id="ted1">NIT Silchar</span>
@@ -33,11 +48,32 @@
 	<p>
 		<span id="ted2"><b>X </b></span>
 		<span id="ted3">= independently organised TED event</span>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br></br></br></br></br>
+        <br></br>
+        <span class="typeHeader2"> COMING SOON</span>
 	</p>
-	<div style="overflow: hidden;" id="text">
-		<span id="ted4">COMING SOON&nbsp&nbsp MARCH 2019</span>
-		
-	</div>
+    </div>
+	
+    
+
+    <script>
+        setInterval(function(){
+            var options = {
+              strings: ["First sentence.", "COMING SOON","MARCH 2019"],
+              typeSpeed: 70,
+            }
+
+            var typed = new Typed(".typeHeader2", options);
+            document.querySelectorAll(".typed-cursor")[0].style.display = "none"; 
+            var rellax = new Rellax('.rellax',{
+                horizontal: true
+            });
+        }, 5000);    
+
+
+    </script>
+
 
 	<div id="mainpage" style="display: none;">
 
@@ -47,8 +83,8 @@
 		<nav>
 			<ul style="position: absolute;left: 46%;top: 50%;transform: translateY(-50%);">
 				<li><a href="#aboutpage" style="font-family: century;">About Us</a></li>
-				<li><a id="speak" style="font-family: century;">Speakers</a></li>
-				<li><a href="#teampage" style="font-family: century;">Team</a></li>
+				<li><a id="speak" href="#prevspeakers" style="font-family: century;">Archives</a></li>
+				<li><a href="#foot" style="font-family: century;">Contact</a></li>
 				<li><a href="#" style="font-family: century;">NIT Silchar</a></li>
 			</ul>
 		</nav>
@@ -58,20 +94,27 @@
 
 	</header>
 
-		<div id="coming" class="hide">
-		<div id="comingin">
-			COMING SOON!!!
-		</div>
-		</div>
+
+		
 	
 	
 
 	<div class="tab_div" id="aboutpage">
-		<div class="about-top">
-			<div class="top-text" style="font-family: century;font-weight: bold;">
+		<div class=" previousSpeakers">
+<!-- 			<div class="top-text" style="font-family: century;font-weight: bold;">
 				ABOUT US
 			</div>
-		</div>
+
+ -->	
+        <br><br>
+        <p>ABOUT US </p>
+        </div>
+
+        <div class='pencil rellax' data-rellax-speed="0">
+            <img  src="pencil.png" height="200" width="200">
+            </img>
+        </div>
+
 		<div class="tabs_menu">
 			<ul class="tabs" style="font-family: century;">
 				<li id="tab1" onclick="show1()" style="font-family: century;" > Ted </li>
@@ -83,28 +126,143 @@
 		</div>
 		<div class="tab_content">
 			<div id="tab1_content">
-				<p> Tab 1 Content </p>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 				<!--       closes tab 1 content -->
 			</div>
 
 			<div id="tab2_content">
-				<p> Tab 2 Content </p>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 				<!--       closes tab 2 content -->
 			</div>
 
 			<div id="tab3_content">
-				<p> Tab 3 Content </p>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 				<!--       closes tab 3 content -->
 			</div>
 
 			<div id="tab4_content">
-				<p> Tab 4 Content </p>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 				<!--       closes tab 4 content -->
 			</div>
 
 			<!--     closing tab content div -->
 		</div>
 		<!--     closing tab div -->
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <br><br><br>
+
+    <div class="previousSpeakers" id="prevspeakers">
+
+        <div class='bulb rellax' data-rellax-speed="0" >
+            <img  src="bulb.png" height="200" width="200">
+            </img>
+        </div>
+         <div class='cam rellax' data-rellax-speed="0">
+            <img  src="cam.png" height="200" width="200">
+            </img>
+        </div>
+
+
+
+        <p>PREVIOUS SPEAKERS </p>
+        <br><br><br>
+
+
+        <div class="row1">
+            <div>
+                <span class="dot mithila">               
+                </span>
+                <br>
+                <br>
+                <span style="font-family: century" >MITHILA PALKAR               
+                </span>
+            </div> 
+            <div>
+                <span class="dot santy"></span>
+                <br>
+                <br>
+                <span style="font-family: century">AMIT MISHRA               
+                </span>
+            </div> 
+            <div>
+                <span class="dot amit"></span>
+                <br>
+                <br>
+                <span style="font-family: century" >AMIT MALIK               
+                </span>
+            </div> 
+        </div>
+        <br><br><br>
+         <div class="row2">
+            <div>
+                <span class="dot goutam"></span>
+                <br>
+                <br>
+                <span style="font-family: century">GOUTAM PAUL               
+                </span>
+            </div> 
+            <div>
+                <span class="dot gupta"></span>
+                <br>
+                <br>
+                <span style="font-family: century">SANTANU GUPTA               
+                </span>
+            </div> 
+
+        </div>
+
+               
+    </div>
+    <br><br><br><br><br><br>
+
+
+    <br><br>
+    <hr>
+
+
+
+    <div class="previousSpeakers">
+        <br><br>
+        <p style="column-span:none">CONTACT US </p>
+        <br><br><br>
+
+        <div class='contactUs'>
+
+            <div class='form'>
+                <div class="container">
+                  <form action="action_page.php">
+
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+                    <label for="lname">E-mail</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your email.."><br>
+
+
+                    <label for="subject">Subject</label><br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+
+                    <input type="submit" value="Submit"><br>
+                  </form>
+                </div>
+            </div>
+
+
+            <div class='map'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.483430791655!2d92.79416709223183!3d24.757025829283737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374e49dcb63bae9b%3A0x81efa836714a289b!2sNational+Institute+Of+Technology%2C+Silchar%2C+Assam!5e0!3m2!1sen!2sin!4v1544472595641" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+
+               
+    </div>
 	</div>
 
 
@@ -112,99 +270,7 @@
 
 
 
-
- <div class="team" id="teampage">
-
-        <!-- Header -->
-        <div class="team-header">
-            <h1>Meet Our Team</h1>
-        </div>
-
-        <!-- Photo Grid -->
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <div class="front">
-                        <img src="profile.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh;color: white;">Tapan Saikia</h2><br><span>Web Developer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="front">
-                        <img src="akash.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh">Akashjyoti Hazarika</h2><br><span>Web Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="front">
-                        <img src="fatso.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh">Tukan Dutta</h2><br><span>Web Developer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="front">
-                        <img src="sourav.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh">Sourav Das</h2><br><span>Team Head</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="front">
-                        <img src="manish.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh">Manish Upadhyaya</h2><br><span>Web Developer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="front">
-                        <img src="priyam.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh">Priyam Bharadwaz</h2><br><span>Web Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="front">
-                        <img src="rohit.jpg" style="width:100%">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2 style="font-size: 3vh">Rohit Upadhayaya</h2><br><span>Team Head</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer id="foot">
+     <footer id="foot">
         <div class="left">
             <div class="m1">
             </div>
@@ -239,7 +305,6 @@
         </div>
     </footer>
 
-    <div id="speakpage"></div>
 
 
 </div>
@@ -250,6 +315,7 @@
 
 </body>
 <script type="text/javascript" src="home.js"></script>
+
  <script>
 
 

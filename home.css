@@ -3,8 +3,9 @@ html{
 }
 
 body{
-	background-color: #0b0b0b;
+	background-image: url(headImge.jpg);
 	margin: 0;
+	background-size: cover;
 	padding: 0;
 }
 @font-face{
@@ -679,7 +680,7 @@ z-index: -10;
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
 
 .tab_div {
-  height: 90vh;
+  height: 100%;
   width: 100%;
   transform: translateZ(0);
   background-color: #ffffff;
@@ -727,11 +728,12 @@ ul.tabs li {
 #tab3_content,
 #tab4_content {
   /*   background-color:red; */
-  float: right;
-  width: 70%;
+  float: left;
+  width: 50%;
   height: auto;
   padding-top: 5%;
   color: black;
+  margin-left: 5vw;
 }
 #tab2_content,
 #tab3_content,
@@ -1232,4 +1234,165 @@ nav a:hover {
 	font-size:2em;
 	font-weight: bold;
 	z-index: 5;
+}
+
+
+
+
+
+
+
+
+.typeHeader2{
+	font-size:30px;
+	padding-left: 40vw;
+	color:white;
+	opacity: 0;
+	animation-name: para;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	animation-delay: 5s;
+}
+
+
+@keyframes typeHeader2{
+	
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+hr {
+  border:none;
+  height: 20px;
+ 	width: 90%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px; 
+}
+
+.previousSpeakers{
+	text-align: center;
+}
+
+.previousSpeakers p{
+	font-size:2vw;
+	text-shadow: 0px 1px 0.5px #000000;
+	margin:0;
+}
+
+.dot {
+  margin-top:5vw;
+  height: 10vw;
+  width: 10vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 5px 10px 8px #888888;
+  border:1px solid black;
+}
+
+.row1{
+	columns:3 250px;
+	margin:0 10vw;
+}
+.row2{
+	columns:2 400px;
+	margin:0 13vw;
+
+}
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: left;
+  width:45vw;
+  margin-left:2vw;
+
+}
+
+.contactUs{
+	columns:2 40vw;
+}
+
+.bulb{
+	position:absolute;
+	right:0px;
+	top:310px;
+}
+
+.cam{
+	position:absolute;
+	left:0px;
+	top:500px;
+}
+
+.mithila{
+	background-image: url(mithilaprod.jpg);
+
+	background-size: cover;
+	align-self: center;
+}
+
+.santy{
+	background-image: url(santybro.jpg);
+
+	background-size: cover;
+	align-self: center;
+}
+
+.amit{
+	background-image: url(amitwa.png);
+
+	background-size: cover;
+	align-self: center;
+}
+.goutam{
+	background-image: url(goutam.JPG);
+
+	background-size: cover;
+	align-self: center;
+}
+.gupta{
+	background-image: url(gupta.jpg);
+
+	background-size: cover;
+	align-self: center;
+}
+
+.pencil{
+	position:absolute;
+	right:0px;
+	top:0px;
 }
