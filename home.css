@@ -48,8 +48,8 @@ body{
 	}
 	@keyframes main{
 	0%{transform: translate(-50%,-50%) scale(0.5);top: 65%;}
-	50%{transform: translate(-50%,-50%) scale(0.045);top: 14%;left: 67.5%;}
-	100%{transform: translate(-50%,-50%) scale(0.045);top: 14%;left: 67.5%;opacity: 0;}
+	50%{transform: translate(-50%,-50%) scale(0.045);top: 14vh;left: 67.5vw;}
+	100%{transform: translate(-50%,-50%) scale(0.045);top: 14vh;left: 67.5vw;opacity: 0;}
 	}
 
 }
@@ -334,11 +334,10 @@ z-index: -10;
  	}
 
  	#para #ted{
-	top: 8vh;
-	left: 51vw;
+	top: 9%;
+	left: 51%;
 	transform: translateX(-50%);
 	font-size: 1em;
-	font-family: century;
 	}
 
 	#para #ted1{
@@ -972,7 +971,7 @@ nav a:hover {
 
 	header {
 		display: grid;
-		grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+		grid-template-columns: 1fr auto minmax(600px, 3fr) 0.1fr;
 	}
 
 	.log {
