@@ -88,13 +88,13 @@
   <div id="mainpage" style="display: none;">
 
                         <header id="myHeader" style="height: 12%;">
-                            <a href="index.html"><img src="logotedx.png" class="log"></a>
+                            <a href="#"><img src="logotedx.png" class="log"></a>
                             <input type="checkbox" id="nav-toggle" class="nav-toggle" name="">
                             <nav>
                                 <ul >
                                     <li><a href="#aboutpage" style="font-family: century;">About Us</a></li>
                                     <li><a id="speak" href="#prevspeakers" style="font-family: century;">Archives</a></li>
-                                    <li><a href="#" style="font-family: century;">NIT Silchar</a></li>
+                                    <li><a href="#message" style="font-family: century;">NIT Silchar</a></li>
                                     <li><a href="#contact" style="font-family: century;">Contact</a></li>
                                     
                                 </ul>
@@ -358,6 +358,10 @@ window.addEventListener("load", showPage);
 function showPage() {
 preloader.style.display='none';
   document.body.classList.remove('js-loading');
+  setTimeout(function(){
+document.getElementById('mainpage').style.display='block';
+        
+    }, 5000);
 }
 </script>
 
