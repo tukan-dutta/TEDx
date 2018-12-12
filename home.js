@@ -1,3 +1,6 @@
+
+
+
 window.onscroll = function () {
     myFunction()
 };
@@ -10,16 +13,4 @@ function myFunction() {
     }
 }
 
-setTimeout(function(){
-document.getElementById('mainpage').style.display='block';
-		
-	}, 5000);
 
-var coming = document.getElementById('coming');
-var speak=document.getElementById('speak');
-speak.addEventListener("click",function(){
-	coming.className = "";
-	setTimeout(function(){
-		coming.className = "hide";
-	}, 2000)
-});

@@ -1308,7 +1308,7 @@ nav a:hover {
 
 
 #mainpage{
-	display: block;
+	display: none;
     position: absolute;
     width: 100%;
     top: 100vh;
