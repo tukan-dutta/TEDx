@@ -9,6 +9,29 @@ body{
 	padding: 0;
 }
 
+/*nits code*/
+#message p,h1{
+	padding: 0 8%;
+	line-height: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 3vw;
+}
+
+#message h1 {
+	text-align: center;
+}
+
+#message hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 11%;
+    margin-left: 11%;
+    margin-top: 3%;
+}
+
+
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
