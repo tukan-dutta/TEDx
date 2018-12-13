@@ -514,14 +514,14 @@ body{
 	position: absolute;
 	top: 20%;
 	left: 22% ;
-	font-size: 1.6em;
+	font-size: 8.5vw;
 	font-weight: bold;
 }
 #para #ted1{
 	position: absolute;
 	top: 20%;
-	left: 46% ;
-	font-size: 1.6em;
+	left: 44% ;
+	font-size: 8.5vw;
 }
 
 #ted2{
@@ -529,7 +529,7 @@ body{
 	position: absolute;
 	top: 41%;
 	left: 23.5% ;
-	font-size: 2.5em;
+	font-size: 3vw;
 	font-family: sans-serif;
 	opacity: 0;
 	animation-name: para1;
@@ -543,7 +543,7 @@ body{
 	position: absolute;
 	top: 40%;
 	left: 27% ;
-	font-size: 2.5em;
+	font-size: 3vw;
 	font-family: century;
 	opacity: 0;
 	font-weight: normal;
@@ -653,7 +653,7 @@ z-index: -10;
 	position: absolute;
 	width: 5px;
 	height: 17px;
-	top: 23%;
+	top: 28.5%;
 	left: 18.45%;
 	background-color: white;
 	border-radius: 2px;	
@@ -661,14 +661,14 @@ z-index: -10;
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-duration: 2s;
-	animation-delay: 6s;
+	animation-delay: 9.5s;
 	animation-iteration-count: infinite;
 	z-index: -2;
 }
 
 @keyframes logo{
-	0%{opacity: 1;top: 23.5%;}
-	100%{top: 28%;opacity: 1;}
+	0%{opacity: 1;top: 28.5%;}
+	100%{top: 23.5%;height: 0; opacity: 1;}
 }
 
 #logoside1{
@@ -676,7 +676,7 @@ z-index: -10;
 	width: 18px;
 	height: 6px;
 	top: 27%;
-	left: 17.2%;
+	left: 16.5%;
 	background-color: white;
 	border-radius: 2px;	
 	animation-name: logo1;
@@ -684,12 +684,12 @@ z-index: -10;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-duration: 2s;
-	animation-delay: 7s;
+	animation-delay: 9s;
 	z-index: -2;
 }
 @keyframes logo1{
 	0%{opacity: 1;}
-	100%{opacity: 1;left: 16.2%;width: 0;}
+	100%{opacity: 1;left: 19.2%;width: 0;}
 
 }
 
@@ -697,7 +697,7 @@ z-index: -10;
 	position: absolute;
 	width: 6px;
 	height: 20px;
-	top: 26.8%;
+	top: 33%;
 	left: 16.2%;
 	background-color: white;
 	border-radius: 2px;	
@@ -706,13 +706,13 @@ z-index: -10;
 	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
 	animation-duration: 2s;
-	animation-delay: 8.5s;
+	animation-delay: 8s;
 	z-index: -2;
 }
 
 @keyframes logo2{
-	0%{opacity: 1;top: 27.6%;}
-	100%{opacity: 1;top: 33%;}
+	0%{opacity: 1;top: 33%;}
+	100%{opacity: 1;top: 27.5%;height: 0;}
 
 }
 
@@ -721,20 +721,20 @@ z-index: -10;
 	width: 18px;
 	height: 6px;
 	top: 31.1%;
-	left: 16.3%;
+	left: 14.3%;
 	background-color: white;
 	border-radius: 2px;	
 	animation-name: logo3;
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
+	animation-delay: 7s;
 	animation-duration: 1.8s;
-	animation-delay: 9.5s;
 	z-index: -2;
 }
 @keyframes logo3{
 	0%{opacity: 1;}
-	100%{opacity: 1; left: 14%;top: 31.5%;width: 0}
+	100%{opacity: 1; left: 17%;top: 31.5%;width: 0}
 
 }
 
@@ -742,7 +742,7 @@ z-index: -10;
 	position: absolute;
 	width: 7px;
 	height: 0px;
-	top: 31.5%;
+	top: 34%;
 	left: 14%;
 	background-color: white;
 	border-radius: 2px;	
@@ -751,12 +751,12 @@ z-index: -10;
 	animation-fill-mode: forwards;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
-	animation-delay: 10.5s;
+	animation-delay: 6s;
 	z-index: -2;
 }
 @keyframes logo4{
-	0%{opacity: 1;top: 31.5%;height: 18px}
-	100%{opacity: 1; top: 36.8%;height: 0px}
+	0%{opacity: 1;top: 34%;height: 18px}
+	100%{opacity: 1; top: 31.8%;height: 0px}
 
 }
 
